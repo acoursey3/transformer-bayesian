@@ -10,5 +10,5 @@ Let's consider a situation.
 
 $$p(\theta|D)={10 \choose 8}\theta^8(1-\theta)^{2}$$
 
-
+![likelihood distribution](https://github.com/acoursey3/transformer-bayesian/figures/main/likelihood.png?raw=true)
 
