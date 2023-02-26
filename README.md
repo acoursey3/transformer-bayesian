@@ -45,3 +45,18 @@ $$
 <p align="center">
   <img src="https://github.com/acoursey3/transformer-bayesian/blob/main/figures/posterior.png?raw=true">
 </p>
+
+- Continually adjust beliefs under new data
+- Incorporate knowledge
+- Useful with little data
+- Distribution over parameter
+
+#### Issues with Bayesian Inference
+
+- $p(D)$ is often intractable
+- Turn towards methods like Markov Chain Monte Carlo
+- Slow, need to sample
+- Variational Inference
+- Approximate, less accurate
+
+### Transformers for Bayesian Inference
