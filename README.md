@@ -55,9 +55,9 @@ $$
 
 - $p(D)$ is often intractable
 - Turn towards methods like Markov Chain Monte Carlo
-- Slow, need to sample
+  - Slow, need to sample
 - Variational Inference
-- Approximate, less accurate
+  - Approximate, less accurate
 
 ### Transformers for Bayesian Inference
 
@@ -80,5 +80,14 @@ $$
 This will approximate the exact posterior predictive distribution at better speeds than MCMC and VI!
 
 ## Paper Details
+
+### Modifications to Transformer Architecture
+
+- Feed (x,y) pairs as sum of their encodings (linear projections)
+- Encoder Transformer - head depends on task
+  - Softmax/sigmoid for classification
+  - Riemann distribution for regression (contribution)
+- Attention:
+
 
 ## Code Demonstration
