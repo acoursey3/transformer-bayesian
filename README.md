@@ -64,4 +64,21 @@ $$
 - Often we want to Posterior Predictive Distribution rather than posterior (Gaussian Processes and Bayesian Neural Networks)
 - To solve this, use Transformers!
 
+#### Approach Overview
 
+<p align="center">
+  <img src="https://github.com/acoursey3/transformer-bayesian/blob/main/figures/pfn_overview.png?raw=true">
+</p>
+
+- Create a prior over a supervised learning task (functions of datasets)
+- Sample task/function from prior
+- Draw X/y
+- Mask a $y_i$ and learn to make predictions (Transformer model)
+- At test time, feed in your dataset and $X$
+- Outputs PPD for test point
+
+This will approximate the exact posterior predictive distribution at better speeds than MCMC and VI!
+
+## Paper Details
+
+## Code Demonstration
