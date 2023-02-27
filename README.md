@@ -97,6 +97,7 @@ This will approximate the exact posterior predictive distribution at better spee
 - Why do they need a transformer?
   - Connected set neural network (graph nn)
   - Permutation equivariant (invariant after head)
+  - Accomplished by no positional encoding
   
 ### Other Important Details
 
