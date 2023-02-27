@@ -129,6 +129,7 @@ This will approximate the exact posterior predictive distribution at better spee
   - GP hyperparameter prior
   - BNN architecture
     - Sample architecture and weights from prior, posterior represents distributions of architectures
+    - Learns "these types of models do well for the task of binary classification on data of this size"
 - On new dataset, single forward step 
   - 13 seconds, much faster than all baselines
   
