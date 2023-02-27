@@ -111,8 +111,24 @@ This will approximate the exact posterior predictive distribution at better spee
 - [GP Demo](https://huggingface.co/spaces/samuelinferences/transformers-can-do-bayesian-inference)
 
 - For hyperparameter priors
-  - 200x faster than MLE-II and 1000-8000x faster than MCMC
+  - 200x faster than MLE-II and 1000-8000x faster than MCMC (NUTS)
   
+#### Bayesian Neural Network Regression
+- 1000x faster than stochastic VI
+- 10,000x faster than NUTS
 
+#### Real-World Datasets
+- **Small** real world datasets
+- 20 datasets, < 100 features
+- Binary classification
+- Compare against baselines: 
+  - XGBoost, Catboost, logistic regression, K-Nearest Neighbors, Gaussian Processes, Bayesian Neural Networks
+- Consider 2 priors:
+  - GP hyperparameter prior
+  - BNN architecture
+    - Sample architecture and weights from prior, posterior represents distributions of architectures
+- On new dataset, single forward step 
+  - 13 seconds, much faster than all baselines
+  
 
 ## Code Demonstration
