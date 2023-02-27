@@ -155,6 +155,7 @@ See `notebooks/PaperPresentationAustinCoursey.ipynb`
 
 - Powerful approach
 - Fast PPD inference
+- Inject prior knowledge into ML
 - Uses Transformers for permutation invariance
 - Limited to smaller datasets, can't inspect posterior
 
