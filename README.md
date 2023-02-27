@@ -62,7 +62,7 @@ $$
 
 ### Transformers for Bayesian Inference
 
-- Often we want to Posterior Predictive Distribution rather than posterior (Gaussian Processes and Bayesian Neural Networks)
+- Often we want the Posterior Predictive Distribution rather (PPD) than posterior (Gaussian Processes and Bayesian Neural Networks)
 - To solve this, use Transformers!
 
 #### Approach Overview
