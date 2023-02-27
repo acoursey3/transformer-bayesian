@@ -14,6 +14,7 @@ $$p(D | \theta)={10 \choose 8}\theta^8(1-\theta)^{2}$$
   <img src="https://github.com/acoursey3/transformer-bayesian/blob/main/figures/likelihood.png?raw=true">
 </p>
 
+### Class Question 1.
 - Does this seem right? 
 - What **prior** information might we want to consider when modeling casino win probability?
 
@@ -114,6 +115,7 @@ This will approximate the exact posterior predictive distribution at better spee
   - 200x faster than MLE-II and 1000-8000x faster than MCMC (NUTS)
   
 #### Bayesian Neural Network Regression
+- Prior of weights
 - 1000x faster than stochastic VI
 - 10,000x faster than NUTS
 
@@ -130,5 +132,37 @@ This will approximate the exact posterior predictive distribution at better spee
 - On new dataset, single forward step 
   - 13 seconds, much faster than all baselines
   
+<p align="center">
+  <img src="https://github.com/acoursey3/transformer-bayesian/blob/main/figures/tabular.png?raw=true">
+</p>
 
-## Code Demonstration
+#### Code Demonstration (and Class Question 2.)
+
+See `notebooks/PaperPresentationAustinCoursey.ipynb`
+
+## Critical Analysis
+- Is the posterior predictive distribution enough?
+  - SVI and MCMC approximate the posterior
+  - Is this a fair comparison?
+  - Can't inference over GP hyperparameters or BNN architecture
+  - Should have developed this further
+- Only considers small-scale problems
+- Claims it will work without Transformers
+  - Should have given further justification
+
+## Conclusion
+
+- Powerful approach
+- Fast PPD inference
+- Uses Transformers for permutation invariance
+- Limited to smaller datasets, can't inspect posterior
+
+## Questions?
+
+## Resource Links
+- [HuggingFace GP Space](https://huggingface.co/spaces/samuelinferences/transformers-can-do-bayesian-inference)
+- [Bayesian Inference Intro](https://seeing-theory.brown.edu/bayesian-inference/index.html)
+- [Reviewer Comments to the Paper](https://openreview.net/forum?id=KSugKcbNf9)
+- [Code for paper](https://github.com/automl/TransformersCanDoBayesianInference)
+- [WIP Bayesian Neural Network explanation with MCMC and VI](https://www.cs.toronto.edu/~duvenaud/distill_bayes_net/public/)
+- [Transformers as Graph Neural Networks](https://thegradient.pub/transformers-are-graph-neural-networks/)
