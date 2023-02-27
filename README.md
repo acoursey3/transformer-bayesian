@@ -89,5 +89,30 @@ This will approximate the exact posterior predictive distribution at better spee
   - Riemann distribution for regression (contribution)
 - Attention:
 
+<p align="center">
+  <img src="https://github.com/acoursey3/transformer-bayesian/blob/main/figures/attention.png?raw=true">
+</p>
+
+- Why do they need a transformer?
+  - Connected set neural network (graph nn)
+  - Permutation equivariant (invariant after head)
+  
+### Other Important Details
+
+- Custom loss function
+  - Proved to approximate PPD
+  
+### Main Results
+
+#### GP Approximation
+- GP is a type of Bayesian ML model
+- Distribution over functions
+- For fixed hyperparameters, it is tractable
+- [GP Demo](https://huggingface.co/spaces/samuelinferences/transformers-can-do-bayesian-inference)
+
+- For hyperparameter priors
+  - 200x faster than MLE-II and 1000-8000x faster than MCMC
+  
+
 
 ## Code Demonstration
