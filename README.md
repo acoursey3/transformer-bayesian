@@ -169,3 +169,4 @@ See `notebooks/PaperPresentationAustinCoursey.ipynb`
 - [Code for paper](https://github.com/automl/TransformersCanDoBayesianInference)
 - [WIP Bayesian Neural Network explanation with MCMC and VI](https://www.cs.toronto.edu/~duvenaud/distill_bayes_net/public/)
 - [Transformers as Graph Neural Networks](https://thegradient.pub/transformers-are-graph-neural-networks/)
+- [The paper](https://arxiv.org/abs/2112.10510)
